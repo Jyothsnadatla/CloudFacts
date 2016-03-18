@@ -8,7 +8,7 @@ Table of Content
 1. `IF Statements`_
 
       - `Simple IF Statements`_
-      
+      - `IF-ELSE Statements`
  
 2. `Switch Statement`_
 
@@ -103,7 +103,7 @@ Structure of :code:`if` statement in Apex is:
 Java
 ^^^^^
    
-IF_ELSE Statements
+IF-ELSE Statements
 ###################
 
 An :code:`if` statement can be followed by an optional :code:`else` statement, which executes when the boolean expression is :code:`false`.
@@ -322,20 +322,20 @@ The structure of :code:`Do..While` loop in Apex is :
 
 .. code-block:: java
 
-    Do{
+    do{
      code_block;
 
-    }While(condition);
+    }while(condition);
 
 **Example**
 
 .. code-block:: java
 
    Integer count=1;
-   Do{
+   do{
      system.debug(count);
      count++;
-     } While(count<11);
+     } while(count<11);
 
 
 For loop   
