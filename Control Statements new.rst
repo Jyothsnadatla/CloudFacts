@@ -279,11 +279,11 @@ The structure of :code:`While` loop in Apex is:
 .. code-block:: java
    
    Integer count=1;
-   while(count<11){
-    system.debug(count);
-    count++;
+    while(count<11){
+      system.debug(count);
+      count++;
   
-    }
+     }
 
 Java
 ^^^^^^
