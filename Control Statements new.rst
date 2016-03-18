@@ -47,35 +47,11 @@ Summary Table
 | For Loop              | Supported       | Supported      |   Similar Functionality   | 
 |                       |                 |                |                           | 
 +-----------------------+-----------------+----------------+---------------------------+
-
-
-
-
-
-+-----------------------+-----------------+----------------+---------------------------+ 
-| Control Statement     |   Java          |   Apex         |     Remarks               |
-|                       |                 |                |                           |
-+=======================+=================+================+===========================+ 
-| If Statement          | Supported       | Supported      |   Similar Functionality   |
-|                       |                 |                |                           | 
-+-----------------------+-----------------+----------------+---------------------------+
-| Switch Statement      | Supported       | NotSupported   | Apex doesn't support      |
-|                       |                 |                | Switch Statement          |                 
-+-----------------------+-----------------+----------------+---------------------------+
-| The While and         | Supported       | Supported      |   Similar  Functionality  | 
-| Do-While Statement    |                 |                |                           | 
-+-----------------------+-----------------+----------------+---------------------------+
-| For Loop              | Supported       | Supported      |   Similar Functionality   | 
-|                       |                 |                |                           | 
-+-----------------------+-----------------+----------------+---------------------------+
 | Branching             | Supported       | Supported      |   Similar Functionality   |   
 |  Statement            |                 |                |                           |
 |   - Break             |                 |                |                           | 
 |   - Continue          |                 |                |                           |
 +-----------------------+-----------------+----------------+---------------------------+
-
-
-
 
 
 IF Statements  
@@ -261,7 +237,7 @@ The structure of :code:`While` loop in Java is:
 
 .. code-block:: java
    
-   While(Expression){
+   while(Expression){
       Statement(s);
    }
 
@@ -292,7 +268,7 @@ The structure of :code:`While` loop in Apex is:
 
 .. code-block:: java
    
-   While(condition){
+   while(condition){
    Code_block;
    
    }
@@ -303,7 +279,7 @@ The structure of :code:`While` loop in Apex is:
 .. code-block:: java
    
    Integer count=1;
-   While(count<11){
+   while(count<11){
     system.debug(count);
     count++;
   
@@ -325,7 +301,7 @@ The structure of :code:`Do-While` loop in Java is:
 
    do{
          Statement(s);
-   }While(Expression);
+   }while(Expression);
 
  **Example**
 
@@ -337,7 +313,7 @@ The structure of :code:`Do-While` loop in Java is:
          do{
             System.out.println("The count is:"  + count);
             count++;
-         }While(count<11);
+         }while(count<11);
 
       }     
   
@@ -643,17 +619,15 @@ Apex
 .. code-block:: java
 
     public class continueExp {
-
-       public void number(){
-         List<Integer> numlst=new List<Integer> {10,20,30,40,50};
-
-          for(Integer x : numlst ) {
-             if( x == 30 ) {
-                 continue;
-           }
-            System.debug( x );
+      public void number(){
+            List<Integer> numlst=new List<Integer> {10,20,30,40,50};
+            for(Integer x : numlst ) {
+                  if( x == 30 ) {
+                     continue;
+                  }
+                  System.debug( x );
         
-         }
+            }
       }
    }
 
