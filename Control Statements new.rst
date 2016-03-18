@@ -50,6 +50,34 @@ Summary Table
 
 
 
+
+
++-----------------------+-----------------+----------------+---------------------------+ 
+| Control Statement     |   Java          |   Apex         |     Remarks               |
+|                       |                 |                |                           |
++=======================+=================+================+===========================+ 
+| If Statement          | Supported       | Supported      |   Similar Functionality   |
+|                       |                 |                |                           | 
++-----------------------+-----------------+----------------+---------------------------+
+| Switch Statement      | Supported       | NotSupported   | Apex doesn't support      |
+|                       |                 |                | Switch Statement          |                 
++-----------------------+-----------------+----------------+---------------------------+
+| The While and         | Supported       | Supported      |   Similar  Functionality  | 
+| Do-While Statement    |                 |                |                           | 
++-----------------------+-----------------+----------------+---------------------------+
+| For Loop              | Supported       | Supported      |   Similar Functionality   | 
+|                       |                 |                |                           | 
++-----------------------+-----------------+----------------+---------------------------+
+| Branching             | Supported       | Supported      |   Similar Functionality   |   
+|  Statement            |                 |                |                           |
+|   - Break             |                 |                |                           | 
+|   - Continue          |                 |                |                           |
++-----------------------+-----------------+----------------+---------------------------+
+
+
+
+
+
 IF Statements  
 ==============
 
