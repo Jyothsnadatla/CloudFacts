@@ -540,5 +540,98 @@ Continue Statement
 ##################
 
 
+Java
+^^^^^
+
+The :code:`continue` statement skips the current iteration of a :code:`for`,:code:`while`, or :code:`do-while` loop.
+
+*Syntax* of :code:`continue` statement in Java is:
+
+.. code-block:: java
+    
+    continue;
+    
+There are two forms of :code:`continue` statements in java
+      
+      1.Unlabeled continue statement.
+      2.Labeled continue statement.
+      
+   *Unlabeled continue statement:*
+      
+   This form of statement causes skips the current iteration of innermost :code:`for`, :code:`while` or :code:`do while` loops.
+
+
+    
+**Example**
+
+
+.. code-block:: java
+
+    for(int var1 =0; var1 < 5 ; var1++)
+     {
+       for(int var2=0 ; var2 < 5 ; var2++)
+        {
+             if(var2 == 2)
+                 continue;
+                 System.out.println(“var1:” + var1 + “, var2:”+ var2);
+ 
+         }
+ 
+      }
+      
+In above example, when var2 becomes 2, the rest of the inner for loop body will be skipped.
+
+*Labeled continue statement*
+
+Labeled continue statement skips the current iteration of the loop marked with the specified label. This form is used with nested loops.
+
+**Example**
+
+ .. code-block:: java
+ 
+    Outer:
+     for(int var1 =0; var1 < 5 ; var1++)
+       {
+ 
+         for(int var2=0 ; var2 < 5 ; var2++)
+           {
+                if(var2 == 2)
+                        continue Outer;
+ 
+                     System.out.println(“var1:” + var1 + “, var2:”+ var2);
+ 
+           }
+ 
+         }
+         
+In the above example, when var2 becomes 2, rest of the statements in body of inner as well outer for loop will be skipped, and next iteration of the Outer loop will be executed.
+
+
+Apex
+^^^^^
+
+:code:`continue` statement in Apex is similar to Java.
+
+.. code-block:: java
+
+    public class continueExp {
+
+       public void number(){
+         List<Integer> numlst=new List<Integer> {10,20,30,40,50};
+
+          for(Integer x : numlst ) {
+             if( x == 30 ) {
+                 continue;
+           }
+            System.debug( x );
+        
+         }
+      }
+   }
+
+
+
+
+
 
 
