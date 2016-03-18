@@ -8,7 +8,7 @@ Table of Content
 1. `IF Statements`_
 
       - `Simple IF Statements`_
-      - `IF-ELSE Statements`
+      - `IF-ELSE Statements`_
  
 2. `Switch Statement`_
 
