@@ -5,27 +5,27 @@ Table of Content
 =================
 
 
-1. `IF Statements`_
+1. `if Statements`_
 
-      - `Simple IF Statements`_
-      - `IF-ELSE Statements`_
+      - `Simple if Statements`_
+      - `if-else Statements`_
  
-2. `Switch Statement`_
+2. `switch Statement`_
 
-3. `The While and Do-While Statements`_  
+3. `The while and do-while Statements`_  
 
-     - `While Loop`_
-     - `Do-While Loop`_
+     - `while Loop`_
+     - `do-while Loop`_
 
-4. `For loop`_
+4. `for loop`_
 
-    - `For loop`_
-    - `For-each loop`_
+    - `for loop`_
+    - `for-each loop`_
 
 5. `Branching Statements`_
 
-     - `Break Statement`_
-     - `Continue Statement`_
+     - `break Statement`_
+     - `continue Statement`_
 
 
 Summary Table
@@ -35,32 +35,32 @@ Summary Table
 | Control Statement     |   Java          |   Apex         |     Remarks               |
 |                       |                 |                |                           |
 +=======================+=================+================+===========================+ 
-| If Statement          | Supported       | Supported      |   Similar Functionality   |
+| if Statement          | Supported       | Supported      |   Same Syntax             |
 |                       |                 |                |                           | 
 +-----------------------+-----------------+----------------+---------------------------+
-| Switch Statement      | Supported       | NotSupported   | Apex doesn't support      |
+| switch Statement      | Supported       | NotSupported   | Apex doesn't support      |
 |                       |                 |                | Switch Statement          |                 
 +-----------------------+-----------------+----------------+---------------------------+
-| The While and         | Supported       | Supported      |   Similar  Functionality  | 
-| Do-While Statement    |                 |                |                           | 
+| The while and         | Supported       | Supported      |   Same Syntax             | 
+| do-while Statement    |                 |                |                           | 
 +-----------------------+-----------------+----------------+---------------------------+
-| For Loop              | Supported       | Supported      |   Similar Functionality   | 
+| For Loop              | Supported       | Supported      |   Same Syntax             | 
 |                       |                 |                |                           | 
 +-----------------------+-----------------+----------------+---------------------------+
-| Branching             | Supported       | Supported      |   Similar Functionality   |   
-|  Statement            |                 |                |                           |
-|   - Break             |                 |                |                           | 
-|   - Continue          |                 |                |                           |
+| Branching             | Supported       | Supported      |    Same Syntax            |   
+|  Statements           |                 |                |                           |
+|   - break             |                 |                |                           | 
+|   - continue          |                 |                |                           |
 +-----------------------+-----------------+----------------+---------------------------+
 
 
-IF Statements  
+if Statements  
 ==============
 
 Java
 ^^^^^
 
-Simple IF Statements
+Simple if Statements
 ####################
 
 :code:`if` statement is the most basic of all the control statements. It tells your program to execute a certain section of code only if a particular test evaluates to true. An  :code:`if` statement consists of a boolean expression followed by one or more statements.
@@ -107,7 +107,7 @@ Structure of :code:`if` statement in Apex is:
 Java
 ^^^^^
    
-IF-ELSE Statements
+if-else Statements
 ###################
 
 An :code:`if` statement can be followed by an optional :code:`else` statement, which executes when the boolean expression is :code:`false`.
@@ -166,7 +166,7 @@ Structure of :code:`if-else` statements in Apex is:
      system.debug('You are not eligible for the quiz');
    }
 
-Switch Statement
+switch Statement
 ================
 
 Java
@@ -221,17 +221,17 @@ Apex
 Apex does not support :code:`switch` case statements.We will use :code:`if .. else if ..` statements for this purpose. However, formula fields support case syntax, but it eventually compiles into an :code:`if ... else if` format.
 
 
-The While and Do-While Statements
+The while and do-while Statements
 ==================================
 
 Java
 ^^^^^
 
-While Loop
+while Loop
 ###########
 
 
-While loop executes a *statement* repeatedly, until the value of *condition* becomes *false*. The test takes place before each iteration.
+:code:`while` loop executes a *statement* repeatedly, until the value of *condition* becomes *false*. The test takes place before each iteration.
 
 The structure of :code:`While` loop in Java is:
 
@@ -241,7 +241,7 @@ The structure of :code:`While` loop in Java is:
       Statement(s);
    }
 
-The :code:`While` statement evaluate *expression*, which must return a *boolean* value. If the expression evaluate *true*,the :code:`While` statement executes the statements in :code:`While` block. The :code:`While` statement continuous testing the expression and executing its block until the expression evaluates to *false*. 
+The :code:`while` statement evaluate *expression*, which must return a *boolean* value. If the expression evaluate *true*,the :code:`while` statement executes the statements in :code:`while` block. The :code:`while` statement continuous testing the expression and executing its block until the expression evaluates to *false*. 
 
 **Example**
 
@@ -262,9 +262,9 @@ The :code:`While` statement evaluate *expression*, which must return a *boolean*
 Apex
 ^^^^^
 
-The :code:`While` and :code:`Do-While` loops works in Apex similar to Java.
+The :code:`while` and :code:`do-while` loops works in Apex similar to Java.
 
-The structure of :code:`While` loop in Apex is:
+The structure of :code:`while` loop in Apex is:
 
 .. code-block:: java
    
@@ -288,14 +288,14 @@ The structure of :code:`While` loop in Apex is:
 Java
 ^^^^^^
 
-Do-While Loop
+do-while Loop
 ##############
 
-Unlike :code:`For` and :code:`While` loops, which test the loop condition at the top of the loop, the :code:`Do..While` loop checks the condition at the bottom of the loop. 
+Unlike :code:`for` and :code:`while` loops, which test the loop condition at the top of the loop, the :code:`do..while` loop checks the condition at the bottom of the loop. 
 
-A :code:`Do..While` loop is similar to the :code:`While` loop, except that a :code:`Do..While` loop is guaranteed to execute at least one time.
+A :code:`do..while` loop is similar to the :code:`while` loop, except that a :code:`do..while` loop is guaranteed to execute at least one time.
 
-The structure of :code:`Do-While` loop in Java is:
+The structure of :code:`do-while` loop in Java is:
 
 .. code-block:: java
 
@@ -322,7 +322,7 @@ The structure of :code:`Do-While` loop in Java is:
 Apex
 ^^^^^
 
-The structure of :code:`Do..While` loop in Apex is :
+The structure of :code:`do..while` loop in Apex is :
 
 .. code-block:: java
 
@@ -342,15 +342,15 @@ The structure of :code:`Do..While` loop in Apex is :
      } while(count<11);
 
 
-For loop   
+for loop   
 =========
 
 Java
 ^^^^^
 
-A :code:`For` loop is a repetition control structure that allow you to efficiently write a loop that needs to execute a specific number of times.
+A :code:`for` loop is a repetition control structure that allow you to efficiently write a loop that needs to execute a specific number of times.
 
-The *structure* of a :code:`For` loop in Java is:
+The *structure* of a :code:`for` loop in Java is:
 
 .. code-block:: java
   
@@ -381,7 +381,7 @@ For-each loop
 
 :code:`for-each` loop is used to access each successive value in a collection of values.It's commonly used to iterate over an array or collection.
 
-The *structure* of :code:`Foe-each` loop in Java is:
+The *structure* of :code:`For-each` loop in Java is:
 
 .. code-block:: java
 
@@ -494,7 +494,7 @@ The soql for loop iterate the over all of the sObject records returned by a soql
 Branching Statements
 ====================
 
-Break Statement
+break Statement
 ^^^^^^^^^^^^^^^
 
 Java
@@ -540,7 +540,7 @@ The :code:`break` statement in Apex works similar to Java.
      }
     
 
-Continue Statement
+continue Statement
 ##################
 
 
