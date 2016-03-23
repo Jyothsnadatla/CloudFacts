@@ -26,6 +26,10 @@ Table of Content
 
      - `break Statement`_
      - `continue Statement`_
+     
+6. `References`_
+
+7. `Summary`_  
 
 
 Summary Table
@@ -558,11 +562,12 @@ The :code:`continue` statement skips the current iteration of a :code:`for`,:cod
 There are two forms of :code:`continue` statements in java
       
       1.Unlabeled continue statement.
+      
       2.Labeled continue statement.
       
-   *Unlabeled continue statement:*
+*Unlabeled continue statement:*
       
-   This form of statement causes skips the current iteration of innermost :code:`for`, :code:`while` or :code:`do while` loops.
+This form of statement causes skips the current iteration of innermost :code:`for`, :code:`while` or :code:`do while` loops.
 
 
     
@@ -631,6 +636,14 @@ Apex
       }
    }
 
+
+
+References
+===========
+
+`docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html <http://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html>`_
+
+`developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_control_flow.htm <http://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_control_flow.htm>`_
 
 
 Summary
